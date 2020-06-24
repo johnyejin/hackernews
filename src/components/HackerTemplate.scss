@@ -1,0 +1,21 @@
+.HackerTemplate {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  .app-title {
+    background: black;
+    color: #61dafb;
+    height: 4rem;
+    font-size: 2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .content {
+    background: white;
+  }
+}
