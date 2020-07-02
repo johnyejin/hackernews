@@ -5,9 +5,11 @@ import {
   AiOutlineComment,
 } from 'react-icons/ai';
 import './HackerListItem.scss';
+import { Link } from 'react-router-dom';
+import CommentTemplate from './CommentTemplate';
 
 const HackerListItem = ({ news }) => {
-  const { title, domain, time_ago, comments_count, url } = news;
+  const { id, title, domain, time_ago, comments_count, url } = news;
 
   return (
     <div className="HackerListItem">
@@ -28,7 +30,11 @@ const HackerListItem = ({ news }) => {
         <div className="news-comments">
           <AiOutlineComment />
           <div className="comments">
-            {comments_count} {comments_count > 1 ? `comments` : `comment`}
+            <Link to={`/item?id=${id}`}>
+              <a>
+                {comments_count} {comments_count > 1 ? `comments` : `comment`}
+              </a>
+            </Link>
           </div>
         </div>
       </div>

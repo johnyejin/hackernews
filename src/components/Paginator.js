@@ -6,12 +6,13 @@ import {
 } from 'react-icons/gr';
 import './Paginator.scss';
 
-const Paginator = ({ page, onClickPage }) => {
+const Paginator = ({ page, onPageClick }) => {
   const handlePageClick = useCallback(
     data => {
       window.scrollTo(0, 0);
-      onClickPage(data.selected + 1);
-    }
+      onPageClick(data.selected + 1);
+    },
+    []
   );
 
   return (

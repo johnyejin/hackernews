@@ -42,11 +42,19 @@
       }
     }
     .news-comments {
+      cursor: pointer;
       display: flex;
       align-items: center;
       flex-direction: row;
       svg {
         padding-right: 0.1rem;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+        &:hover {
+          color: #dee2e6;
+        }
       }
     }
   }

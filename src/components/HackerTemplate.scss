@@ -1,3 +1,5 @@
+@import '~include-media/dist/include-media';
+
 .HackerTemplate {
   width: 70%;
   margin-left: auto;
@@ -5,6 +7,7 @@
   overflow: hidden;
 
   .app-title {
+    cursor: pointer;
     background: black;
     color: #61dafb;
     height: 4rem;
@@ -17,5 +20,9 @@
 
   .content {
     background: white;
+  }
+
+  @include media('<992px') {
+    width: 100%;
   }
 }
