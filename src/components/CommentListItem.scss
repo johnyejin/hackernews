@@ -1,0 +1,15 @@
+.CommentListItem {
+  border-left: 2px solid #eee;
+  margin: 2em 0;
+
+  .comment-info {
+    display: flex;
+    justify-content: space-between;
+    // margin: 1em 0;
+    color: #828282;
+    font-weight: bold;
+  }
+}
+.CommentListItem > div {
+  margin-left: 1em;
+}

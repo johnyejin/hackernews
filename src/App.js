@@ -6,7 +6,7 @@ import CommentTemplate from './components/CommentTemplate';
 const App = () => {
   return (
     <Switch>
-      <Route path='/news/:page?' component={NewsPage} exact={true} />
+      <Route path='/news/:page?' component={NewsPage} exact />
       <Route path='/item/:id?' component={CommentTemplate} />
       <Route 
         render={({ location }) => (
