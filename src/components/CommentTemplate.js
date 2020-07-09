@@ -10,8 +10,6 @@ import './CommentTemplate.scss';
 import CommentListItem from './CommentListItem';
 
 const CommentTemplate = ({ location, history }) => {
-  console.log('location', location)
-  console.log('history', history)
   const queryId = location.search.split('=')[1];
   const [comments, setComments] = useState(null);
   const [loading, setLoading] = useState(false);
