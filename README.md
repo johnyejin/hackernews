@@ -1,2 +1,2 @@
 # hackernews
-The project cloning Hacker-News using ReactJS
+The project cloning Hacker-News using ReactJS 
